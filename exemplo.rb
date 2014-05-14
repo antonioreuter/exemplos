@@ -8,8 +8,7 @@ class ShipmentAction < ActiveRecord::Base
   has_many :items, dependent: :destroy, class_name: "ShipmentActionItem"
   accepts_nested_attributes_for :items
 
-  has_one :payment_method, dependent: :destroy
-  accepts_nested_attributes_for :payment_method
+  
 
 
 
